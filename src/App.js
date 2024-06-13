@@ -13,7 +13,7 @@ const App = () => {
           <div className="col-span-1">
             <LeftNav />
           </div>
-          <div className="col-span-10">
+          <div className="col-span-12 lg:col-span-10">
             <Main />
           </div>
           <div className="col-span-1">
