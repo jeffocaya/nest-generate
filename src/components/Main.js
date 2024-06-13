@@ -7,7 +7,7 @@ const Main = () => {
       <div id="headerSection" className="bg-white mt-2 mb-6 sticky top-0 flex items-center border-b border-gray-300 pb-4">
   <div className='flex items-center'>
     <img className="w-12 h-12 ml-8 mr-2" src="Logo.svg" alt="Logo" />
-    <div id="siteName" className="p-4 text-2xl md:text-4xl">
+    <div id="siteName" className="p-4 text-3xl md:text-4xl">
       <span className="font-bold">Nest</span>
       <span className=" text-primary">Generate</span>
     </div>
@@ -30,7 +30,7 @@ const Main = () => {
 
         <div id="BodySection" className=" flex-grow text-center pb-4">
           <div id="bodycontainer"className='pt-10 pb-60'>
-            <div id="convert" className="text-2xl md:text-4xl font-semibold">
+            <div id="convert" className="text-3xl md:text-4xl font-semibold">
 Convert DBML to Nest Js
             </div>
             <div id="select" className=" text-2xl p-8">
