@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MainContent = () => {
+const Main= () => {
   return (
     <main className="col-span-10 bg-white p-6 rounded shadow-md">
      
@@ -8,4 +8,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default Main;
