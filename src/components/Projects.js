@@ -1,7 +1,7 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
 import Header from './Header';
 import Footer from './Footer';
+import ProjectCard from './Projectcard';
 
 const Projects = () => {
 

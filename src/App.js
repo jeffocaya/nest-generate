@@ -3,13 +3,15 @@ import React from 'react';
 import LeftNav from './components/LeftNav';
 import Main from './components/Main';
 import RightNav from './components/RightNav';
-import Projects from './components/Projects';
+
+
 
 
 const App = () => {
   return (
     
     <div>
+
     <div className="h-screen">
         <div className="flex-1 grid grid-cols-12 gap-4 max-w-6xl mx-auto p-4">
           <div className="col-span-1">

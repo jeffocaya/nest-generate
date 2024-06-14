@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-white border-b border-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
+    <header className="ml-40 mr-40 bg-white border-b border-gray-300">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
         <div className='flex items-center'>
-    <img className="w-12 h-12 ml-8 mr-2" src="Logo.svg" alt="Logo" />
+    <img className="w-12 h-12 mr-2" src="Logo.svg" alt="Logo" />
     <div id="siteName" className="p-4 text-3xl md:text-4xl">
       <span className="font-bold">Nest</span>
       <span className=" text-primary">Generate</span>

@@ -1,7 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import Projects from './Projects';
-import Footer from './Footer';
 
 const Main = () => {
   return (
