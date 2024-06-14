@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import ProjectCard from './ProjectCard';
 
 const Main = () => {
   return (
@@ -40,7 +42,7 @@ Convert DBML to Nest Js
             </div>
             <div id="drop" className="text-gray-600 text-xl">
               or <span className="text-blue-500 cursor-pointer ">drop DBML file here</span>
-            </div>
+          </div>
           </div>
         </div>
 
