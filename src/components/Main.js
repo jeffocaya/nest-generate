@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import ProjectCard from './ProjectCard';
+import Projects from './Projects';
+import Footer from './Footer';
 
 const Main = () => {
   return (
@@ -44,8 +45,7 @@ Convert DBML to Nest Js
               or <span className="text-blue-500 cursor-pointer ">drop DBML file here</span>
           </div>
           </div>
-        </div>
-
+      </div>
         <div id="ButtonSection" className="lg:bg-secondary text-center p-8 sticky bottom-0 mt-4 lg:border-t lg:border-gray-300 flex justify-center">
   <button className="bg-white border hover:bg-black hover:text-white border-black text-black py-2 px-20 rounded text-4xl flex items-center space-x-2">
     <span className="font-bold">GENERATE</span>
