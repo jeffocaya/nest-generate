@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const RightNav = () => {
   const location = useLocation();
+
+  const [theme, setTheme] = React.useState(localStorage.getItem("theme"));
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const setLightMode = () => {
+    setTheme("light");
+  };
+
+  const setDarkMode = () => {
+    setTheme("dark");
+  };
 
   // Check if current path is /learn or /project
   if (location.pathname === "/learn" || location.pathname === "/project") {
@@ -12,7 +31,10 @@ const RightNav = () => {
   return (
     <div className="bg-white rounded h-screen  p-4">
       <div className="items-end w-20 flex-shrink-0 hidden md:block p-4 ">
-        <button className="hidden md:block border border-black bg-black  items-center justify-center p-2">
+        <button
+          onClick={setLightMode}
+          className="hidden md:block border border-black bg-black  items-center justify-center p-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="text-white h-6 w-6"
@@ -29,14 +51,17 @@ const RightNav = () => {
           </svg>
         </button>
 
-        <button className=" hidden md:block  items-center justify-center p-2 border border-black">
+        <button
+          onClick={setDarkMode}
+          className=" hidden md:block  items-center justify-center p-2 border border-black bg-white"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="size-6 bg-white"
           >
             <path
               stroke-linecap="round"

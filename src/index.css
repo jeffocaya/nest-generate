@@ -30,7 +30,16 @@
   --black: 0, 0, 0;
   --secondary: 229, 231, 235;
 }
-.root {
+.light {
+  --white: 255, 255, 255;
+  --primary: 35, 11, 152;
+  --tprimary: 35, 11, 152;
+  --bgray: 209, 213, 219;
+  --twhite: 255, 255, 255;
+  --black: 0, 0, 0;
+  --secondary: 229, 231, 235;
+}
+.dark {
   --primary: 0, 0, 0;
   --bgray: 255, 255, 255;
   --twhite: 255, 255, 255;
