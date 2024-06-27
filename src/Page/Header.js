@@ -7,8 +7,8 @@ const Header = () => {
         <div className="flex items-center">
           <img className="w-12 h-12 mr-2" src="Logo.svg" alt="Logo" />
           <div id="siteName" className="p-4 text-3xl md:text-4xl">
-            <span className="font-bold">Nest</span>
-            <span className=" text-primary">Generate</span>
+            <span className="font-bold text-black">Nest</span>
+            <span className=" text-tprimary">Generate</span>
           </div>
         </div>
 

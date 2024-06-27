@@ -4,7 +4,7 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
 
-.nunito-<uniquifier> {
+.nunito-<uniquifier > {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -13,12 +13,29 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
 
-.nunito-sans-<uniquifier> {
+.nunito-sans-<uniquifier > {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+:root {
+  --white: 255, 255, 255;
+  --primary: 35, 11, 152;
+  --tprimary: 35, 11, 152;
+  --bgray: 209, 213, 219;
+  --twhite: 255, 255, 255;
+  --black: 0, 0, 0;
+  --secondary: 229, 231, 235;
+}
+.root {
+  --primary: 0, 0, 0;
+  --bgray: 255, 255, 255;
+  --twhite: 255, 255, 255;
+  --white: 0, 0, 0;
+  --black: 255, 255, 255;
+  --secondary: 54, 69, 79;
+  --tprimary: 225, 225, 225;
 }

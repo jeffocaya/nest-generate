@@ -4,8 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#230b98",
-        secondary: "rgb(229 231 235 / var(--tw-bg-opacity))",
+        primary: "rgba(var(--primary))",
+        tprimary: "rgba(var(--tprimary))",
+        bgray: "rgba(var(--bgray))",
+        twhite: "rgba(var(--twhite))",
+        white: "rgba(var(--white))",
+        black: "rgba(var(--black))",
+        secondary: "rgba(var(--secondary))",
       },
     },
   },
