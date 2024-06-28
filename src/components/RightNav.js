@@ -33,11 +33,11 @@ const RightNav = () => {
       <div className="items-end w-20 flex-shrink-0 hidden md:block p-4 ">
         <button
           onClick={setLightMode}
-          className="hidden md:block border border-black bg-black  items-center justify-center p-2"
+          className="hidden md:block border border-black   items-center justify-center p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="text-white h-6 w-6"
+            className="text-black bg-white h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -53,7 +53,7 @@ const RightNav = () => {
 
         <button
           onClick={setDarkMode}
-          className=" hidden md:block  items-center justify-center p-2 border border-black bg-white"
+          className=" hidden md:block  items-center justify-center p-2 border border-black bg-twhite"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const RightNav = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 bg-white"
+            class="size-6 bg-twhite"
           >
             <path
               stroke-linecap="round"
