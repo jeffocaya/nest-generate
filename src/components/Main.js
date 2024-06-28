@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Main = () => {
+  const [theme, setTheme] = React.useState(localStorage.getItem("theme"));
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
   return (
-    <main className="lg:bg-white rounded h-screen  p-4">
+    <main className="bg-white rounded h-screen  p-4">
       <div className="container mx-auto p-0">
         <div
           id="headerSection"
@@ -16,7 +30,10 @@ const Main = () => {
             </div>
           </div>
           <div className=" flex ml-auto items-center space-x-4 lg:hidden pr-8">
-            <button className="bg-items-center p-2">
+            <button
+              onClick={toggleTheme}
+              className="bg-items-center p-2 bg-twhite"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -32,7 +49,7 @@ const Main = () => {
                 />
               </svg>
             </button>
-            <button className="flex items-center justify-center p-2 border border-black">
+            <button className="flex items-center justify-center p-2 border border-black text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -54,7 +71,10 @@ const Main = () => {
 
       <div id="BodySection" className=" flex-grow text-center pb-4">
         <div id="bodycontainer" className="pt-20 bd-40 md:pt-10 md:pb-60">
-          <div id="convert" className="text-3xl md:text-4xl font-semibold">
+          <div
+            id="convert"
+            className="text-3xl md:text-4xl font-semibold text-black"
+          >
             Convert DBML to Nest Js
           </div>
           <div id="select" className=" text-2xl p-8">
