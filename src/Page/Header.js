@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Header = () => {
+  const [theme, setTheme] = React.useState(localStorage.getItem("theme"));
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
     <header className="ml-40 mr-40 bg-white border-b border-gray-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
@@ -28,7 +43,10 @@ const Header = () => {
           </div>
         </nav>
 
-        <button className="flex items-center justify-center p-2 border border-black rounded-full">
+        <button
+          onClick={toggleTheme}
+          className="flex items-center justify-center p-2 border border-black rounded-full"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
